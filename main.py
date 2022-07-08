@@ -20,7 +20,6 @@ class ImageGenerationRequest(BaseModel):
     is_verbose = False
     
 app = FastAPI()
-
 model = MinDalle(is_mega=isMega, models_root='./pretrained')
 
 @app.get("/")
