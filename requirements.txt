@@ -1,0 +1,4 @@
+fastapi
+min_dalle
+pydantic
+matplotlib
