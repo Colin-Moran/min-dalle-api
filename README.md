@@ -10,7 +10,9 @@ You do not need a GPU to run the dalle-mini model, although it is much faster wi
 `pip install -r requirements.txt`
 
 ## Usage
-`uvicorn main:app --reload`
+Navigate to the "app" directory : `cd app`
+
+Start the server: `uvicorn main:app --reload`
 
 If everything goes as planned you will see an output in the console similar to this:
 
@@ -24,4 +26,9 @@ Your server is now running at that address. You can navigate to http://127.0.0.1
 
 ![image](https://user-images.githubusercontent.com/37432040/177916843-0738c0e4-444e-4f74-bb42-36bdeebe2741.png)
 
+## Deployment
+
+I have included a Dockerfile for easy deployment. 
+
+NOTE: Must use a Windows container.
 
