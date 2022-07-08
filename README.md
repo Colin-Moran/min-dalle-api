@@ -1,6 +1,6 @@
 # min-dalle-api
 
- This is a simple python API for AI image generation using min-dalle and FastAPI. This API uses the dalle-mini model by default. You can use the dalle-mega model by channging the `isMega = False` line at the top of the main.py file to `isMega = True`
+ This is a simple python API for AI image generation using min-dalle and FastAPI. This API uses the dalle-mini model by default. You can use the dalle-mega model by changing the `isMega = False` line at the top of the main.py file to `isMega = True`
 
 #### Hardware Requirements
 You do not need a GPU to run the dalle-mini model, although it is much faster with one. It takes about ~100 seconds to generate a 2x2 grid running on my Ryzen 5600X. To run on a GPU you will likely need a minimum of 4GB VRAM for the mini model and 12GB VRAM for the mega model.
