@@ -9,6 +9,7 @@ from fastapi.responses import Response
 import io
 import PIL
 
+isMega = False
 
 class ImageGenerationRequest(BaseModel):
     text: str
@@ -20,7 +21,7 @@ class ImageGenerationRequest(BaseModel):
     
 app = FastAPI()
 
-model = MinDalle(is_mega=False, models_root='./pretrained')
+model = MinDalle(is_mega=isMega, models_root='./pretrained')
 
 @app.get("/")
 async def root():
@@ -39,7 +40,6 @@ def getImage(params: ImageGenerationRequest):
     # image = PIL.Image.new(mode="RGB", size=(200, 200))
     
     return image
-
 
 def imageToByteArray(image: Image) -> bytes:
   imgByteArr = io.BytesIO()
