@@ -2,3 +2,5 @@ fastapi==0.78.0
 min_dalle==0.3.2
 Pillow==9.2.0
 pydantic==1.9.1
+uvicorn==0.18.2
+matplotlib==3.5.2
